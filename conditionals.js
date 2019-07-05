@@ -33,7 +33,7 @@ if (isCitizen && age > 18) {
   console.log("You are eligible to vote.");
 }
 */
-
+/*
 if (temperature < -40 || temperature > 40) {
   console.log("Maybe going outside isn't such a great idea…");
 }
@@ -41,3 +41,20 @@ if (temperature < -40 || temperature > 40) {
 if (!raining) {
   console.log("Leave your umbrella at home!");
 }
+*/
+
+const whichSchool = function (age) {
+  // if age is less than 13 print Elementary School
+  if (age < 13) {
+    console.log("Elementary School if " + age + " is below 13");
+  }
+  // if age is greater than or equal to 13 and less than or equal to 18 print Secondary School
+  else if ((age >= 13) && (age <= 18)) {
+    console.log("Secondary School if " + age + " is between 13 and 18");
+  } else {
+    //print Lighthouse labs in all other instances
+    console.log("Lighthouse Labs in all other cases");
+  }
+  return whichSchool;
+}
+console.log(whichSchool(19));
